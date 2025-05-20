@@ -14,6 +14,10 @@
   font-family: Vazir-medium;
   src: url("./Vazir-Medium.ttf") format("truetype");
 }
+/* @font-face {
+  font-family: Vazir-medium;
+  src: url("./Vazir-Medium.ttf") format("truetype");
+} */
 @font-face {
   font-family: Vazir-bold;
   src: url("./Vazir-Bold.ttf") format("truetype");
