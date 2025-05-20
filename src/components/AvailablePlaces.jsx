@@ -1,27 +1,15 @@
-import React, { useEffect, useState } from "react";
 import Places from "./Places";
 import Error from "./Error";
 import { fetchAvailablePlaces } from "../CallApi";
 
+import { useFetch } from "../hooks/useFetch";
+
 function AvailablePlaces({ onSelectPlace }) {
-  const [isLoading, setIsLoading] = useState(false);
-  const [availablePlaces, setAvailablePlaces] = useState([]);
-  const [error, setError] = useState();
-  useEffect(() => {
-    const fetchPlaces = async () => {
-      setIsLoading(true);
-
-      try {
-        const places = await fetchAvailablePlaces();
-        setAvailablePlaces(places);
-      } catch (error) {
-        setError("در اتصال به سرور خطایی رخ داده است.");
-      }
-
-      setIsLoading(false);
-    };
-    fetchPlaces();
-  }, []);
+  const {
+    isLoading,
+    data: availablePlaces,
+    error,
+  } = useFetch(fetchAvailablePlaces);
 
   if (error) {
     return <Error title={"خطای اتصال به سرور"} message={error} />;

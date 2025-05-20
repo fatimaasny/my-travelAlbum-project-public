@@ -1,9 +1,11 @@
 .error {
+  width: 500px;
   border: 2px solid #023b3b;
   border-radius: 10px;
-  padding: 1rem;
+  padding: 1rem 2rem;
   margin-top: 2rem;
   background-color: #eba2a2;
+  text-align: right;
 }
 .error h3 {
   color: red;
@@ -11,4 +13,18 @@
 }
 .error p {
   color: #ac1414;
+}
+
+.button {
+  text-align: left;
+}
+.button button {
+  border: none;
+  background-color: #ac1414;
+  color: #fff;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  padding: 10px 18px;
+  font-family: Vazir-bold;
+  cursor: pointer;
 }
