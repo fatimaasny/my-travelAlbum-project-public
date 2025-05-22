@@ -1,5 +1,5 @@
 .content {
-  width: 500px;
+  width: 40%;
   border-radius: 10px;
   padding: 1.5rem;
   background-color: #f8d1d1;
@@ -39,4 +39,32 @@
 .buttons button:last-child {
   color: #952222;
   border: 2px solid #952222;
+}
+@media (max-width: 648px) {
+  .content {
+    width: 80%;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  .content h2 {
+    font-size: 1.2rem;
+  }
+  .content h4 {
+    font-size: 0.9rem;
+    padding-right: 1rem;
+  }
+}
+@media (min-width: 649px) and (max-width: 1024px) {
+  .content {
+    width: 65%;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  .content h2 {
+    font-size: 1.2rem;
+  }
+  .content h4 {
+    font-size: 0.9rem;
+    padding-right: 1rem;
+  }
 }

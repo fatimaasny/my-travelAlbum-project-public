@@ -56,3 +56,26 @@
   border-radius: 5px;
   font-size: 0.9rem;
 }
+@media (max-width: 768px) {
+  .places {
+    justify-content: center;
+  }
+
+  .place-item button {
+    width: 280px;
+    height: 180px;
+  }
+
+  .place-item button img {
+    width: 280px;
+    height: 180px;
+  }
+  .place-item button h3 {
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+    width: fit-content;
+    padding: 5px 8px;
+    font-size: 0.8rem;
+  }
+}
